@@ -4,7 +4,7 @@ module.exports = {
     project: 'tsconfig.json',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint/eslint-plugin'],
+  plugins: ['@typescript-eslint/eslint-plugin', '@typescript-eslint', 'prettier'],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
@@ -42,6 +42,5 @@ module.exports = {
         allowForLoopAfterthoughts: true
       }
     ],
-    'no-underscore-dangle': 'off'
   }
 };
